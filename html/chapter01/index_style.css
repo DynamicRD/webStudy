@@ -11,3 +11,13 @@ p{
     border-radius: 20px;
     background-color: rgb(15,200,10);
 }
+
+div#box {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    border: 3px solid black;
+    border-radius: 20px;
+    /* 위치를 결정함 */
+    position: absolute; 
+}
