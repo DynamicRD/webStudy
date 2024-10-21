@@ -46,3 +46,6 @@ _testmain.go
 #*.png
 #*.jpeg
 #*.psd
+
+#이미지폴더
+media/
