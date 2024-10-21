@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상품 구성</title>
+    <style>
+        body{
+            border: solid 1px black;
+        }
+        table{
+            border: solid 1px black;
+            border-collapse: collapse;
+            width: 350px;
+            height: 200px;
+        }
+        table tr, table tr th,table tr td{
+            border: solid 1px black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>상품 구성</h2>
+    <table>
+        <caption>선물용과 가정용 상품 구성</caption>
+        <tr>
+            <th>용도</th>
+            <th>중량</th>
+            <th>개수</th>
+            <th>가격</th>
+        </tr>
+        <tr>
+            <td rowspan="2">선물용</td>
+            <td>3kg</td>
+            <td>11~16과</td>
+            <td>35,000원</td>
+        </tr>
+        <tr>
+            <td>5kg</td>
+            <td>18~26과</td>
+            <td>52,000원</td>
+        </tr>
+        <tr>
+            <td rowspan="2">가정용</td>
+            <td>3kg</td>
+            <td>11~16과</td>
+            <td>30,000원</td>
+        </tr>
+        <tr>
+            <td>5kg</td>
+            <td>18~26과</td>
+            <td>47,000원</td>
+        </tr>
+    </table>
+</body>
+</html>
