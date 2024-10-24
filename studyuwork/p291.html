@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        a{
+            text-decoration: none;
+            color: black;
+        }
         ul{
             list-style-type: none;
             display: flex;
@@ -12,22 +16,27 @@
         }
         ul li{
             border: 1px solid black;
-            background-color: grey;
+            background-color: lightgray;
             padding-top: 10px;
             padding-bottom: 10px;
             padding-right: 20px;
             padding-left: 20px;
         }
+        li:hover{
+            background-color: black;
+            color: white;
+        }
+        a:hover{
+            color: white;
+        }
     </style>
 </head>
 <body>
-    <div class="main">
         <ul>
-            <li>메뉴1</li>
-            <li>메뉴2</li>
-            <li>메뉴3</li>
-            <li>메뉴4</li>
+            <li><a href="#">메뉴1</a></li>
+            <li><a href="#">메뉴2</a></li>
+            <li><a href="#">메뉴3</a></li>
+            <li><a href="#">메뉴4</a></li>         
         </ul >
-    </div>
 </body>
 </html>
