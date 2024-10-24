@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://kit.fontawesome.com/5d5d94563b.js" crossorigin="anonymous"></script>
-    <style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Danfo&display=swap" rel="stylesheet">
+   <style>
         *{
             box-sizing: border-box;
             margin: 0;
@@ -14,6 +17,7 @@
         body{
             font-family: sans-serif;
         }
+
         a{
             text-decoration: none;
         }
@@ -37,6 +41,12 @@
             display: flex;
             justify-content: baseline;
             align-items: center;
+
+            font-family:"Danfo", serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            font-variation-settings:
+            "ELSH" 0;
         }
         div.nav_logo:hover{
            background-color: aqua;
@@ -61,6 +71,7 @@
         }
         ul.nav_menu a:hover{
             background-color: aqua;
+            border-radius: 10px;
         }
         
         ul.nav_icons{
@@ -82,6 +93,7 @@
         ul.nav_icons a{
             font-size: 20px;
             padding: 8px 15px;
+            border-radius: 50%;
         }
         ul.nav_icons :hover{
            background-color: aqua;
