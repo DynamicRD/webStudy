@@ -14,7 +14,13 @@
             font-family: sans-serif;
         }
 
-        table,tr,td,th{
+        table{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+        }
+        tr,td,th{
             border: 1px solid skyblue;
         }
         th{
@@ -26,7 +32,20 @@
         td{
             text-align: left;
         }
-      
+        .buttons{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+        }
+        .buttons button{
+            margin: 10px 2px;
+            width: 80px;
+            height: 30px;
+        }
+        .look{
+            font-size: 12px;
+        }
     </style>
 </head>
 <body>
@@ -127,7 +146,8 @@
                 <input type="checkbox" name ="JAVA Script" id="JAVA Script4" value="4">
                 <label for="JAVA Script4">JAVA Script</label>
                 <input type="checkbox" name ="Python" id="Python5" value="5">
-                <label for="Python5">Python</label>   
+                <label for="Python5">Python</label> 
+                 *하나이상 체크  
             </td>
         </tr>
         <tr>
@@ -141,13 +161,16 @@
             <td><input type="checkbox" name ="agree1" id="agree1" value="1">
                 <label for="agree1">만 14세 이상입니다.</label><br>
                 <input type="checkbox" name ="agree2" id="agree2" value="1">
-                <label for="agree2">이용약관 동의</label><a href="#">내용보기</a><br>
+                <label for="agree2">이용약관 동의</label><a href="#" class="look">내용보기</a><br>
                 <input type="checkbox" name ="agree3" id="agree3" value="1">
-                <label for="agree3">개인정보 수집 및 이용 동의</label><a href="#">내용보기</a></td>
+                <label for="agree3">개인정보 수집 및 이용 동의</label><a href="#" class="look">내용보기</a></td>
         </tr>
     </table>
 </form>
-<button type="submit">회원 가입</button>
-<button type="reset">다시 입력</button>
+<div class="buttons">
+    <button type="submit">회원 가입</button>
+    <button type="reset">다시 입력</button>
+</div>
+
 </body>
 </html>
