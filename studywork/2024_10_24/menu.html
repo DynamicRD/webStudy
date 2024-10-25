@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/5d5d94563b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Danfo&display=swap" rel="stylesheet">
+   <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: sans-serif;
+            background-color: beige;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        a {
+            text-decoration: none;
+        }
+       
+        .thead_logo {
+            display: flex;
+            border: 3px dotted red;
+            background-color: grey;
+            font-size: 36px;
+            width: 500px;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            font-family: "Danfo", serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            font-variation-settings: "ELSH" 0;
+            margin-bottom: 20px;
+        }
+        .thead_logo i {
+            color: greenyellow;
+        }
+        .thead_logo i:hover {
+            color: hotpink;
+        }
+      
+        .thead_menu {
+            border: 1px solid;
+            width: 900px;
+            display: flex;  
+            justify-content: center;
+        }
+        .thead_menu li {
+            border: 1px solid;
+            width: 180px;
+            display: flex;
+            justify-content: center; 
+            font-size: 20px; 
+            background-color: aqua;
+        }
+        .thead_menu li:hover {
+            background-color: greenyellow;
+            color: hotpink;
+        }
+    </style>
+</head>
+<body>
+    <thead>
+        <div class="thead_logo">
+            <a href="#"><i class="fa-solid fa-dog"></i></a> 
+            <a href="#">PET INFORMATIONS</a>
+            <a href="#"><i class="fa-solid fa-cat"></i></a> 
+        </div>
+        <br>
+       
+        <ul class="thead_menu">
+           <li><a href="#">사이트소개</a></li>
+           <li><a href="#">애완동물역사</a></li>
+           <li><a href="#">애완동물종류</a></li>
+           <li><a href="#">온라인숍</a></li>
+           <li><a href="#">찾아오시는길</a></li>
+        </ul>
+    </thead>
+</body>
+</html>
