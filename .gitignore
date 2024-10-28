@@ -49,3 +49,5 @@ _testmain.go
 
 #이미지폴더
 media/
+*.png
+*.db
