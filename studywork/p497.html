@@ -5,27 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        let arr = document.getElementsByClassName(".googoo")
+        document.write(`<h1>구구단</h1>`);
         for(let i = 1;i<=9;i++)
         {
-            for(let j = 0;j<=9;j++)
+            let box = document.getElementsByClassName(".googoo");
+            for(let j = 1;j<=9;j++)
             {
-                arr[`${i-1}`].textContent = `${i} X ${j} = ${i*j} <br>`;
+               document.write(`${i} X ${j} = ${i*j}&nbsp&nbsp&nbsp&nbsp`);
             }
+            document.write(`<br>`);
         }
         
     </script>
+    <style>
+ 
+    </style>
 </head>
 <body>
-    <h1>구구단</h1>
-    <div class="googoo"></div>
-    <div class="googoo"></div>
-    <div class="googoo"></div>
-    <div class="googoo"></div>
-    <div class="googoo"></div>
-    <div class="googoo"></div>
-    <div class="googoo"></div>
-    <div class="googoo"></div>
-    <div class="googoo"></div>
 </body>
 </html>
