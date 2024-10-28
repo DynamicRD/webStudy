@@ -6,12 +6,38 @@
     <title>Document</title>
 </head>
 <script>
-        let flag1 = window.confirm("입장객은 몇 명입니까?");
-        let flag2 = window.confirm("한줄에 몇명씩 앉습니까?");
-        document.write(`<table>`);
+        let sum, row;
+        sum = window.prompt("입장객은 몇명인가요?","0"); 
+        sum = window.parseInt(sum);
+        row = window.prompt("한 줄에 몇 명씩 앉습니까?","0"); 
+        row = window.parseInt(row);
         let count = 0;
-        for(let i = 0;i<flag2;);
+
+        document.write(`<h1>자리 배치도</h1>`);
+        document.write(`<table>`);
+            for(let i = 1;i<= parseInt(sum/row)+1;i++)
+            {
+                document.write(`<tr>`);
+                    for(let j=1;j<=row;j++){
+                        count++;
+                        if(count >sum)
+                        break;
+                        document.write(`<td>좌석 ${count}</td>`); 
+                    }
+                document.write(`</tr>`);
+            }
+            document.write(`<table>`);
+      
 </script>
+<style>
+    table{
+        border-collapse: collapse;
+    }
+    tr,td{
+        border: 1px solid black;
+        padding: 5px;
+    }
+</style>
 <body>
     
 </body>
