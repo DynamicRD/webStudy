@@ -5,33 +5,28 @@
     margin: 0px;
     padding: 0px;
 }
-
 body{
-
 }
-
 /* carousel */
 div.slideshow {
     background-color: black;
     height: 465px;
-    width: 100%;
     min-width: 960px;
     position: relative;
-    border: 1px solid red;
 }
 
 div.slideshow_slides{
-    position: absolute;
-    width: 100%;
-    height: 100%;
+   position: absolute;
+   width: 100%;
+   height: 100%; 
 }
 
 div.slideshow_slides a{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: inline-block;
-    text-align: center;
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   display: inline-block; 
+   text-align: center;
 }
 
 div.slideshow_nav a{
@@ -44,27 +39,26 @@ div.slideshow_nav a{
     opacity: 0.5;
 }
 
-div.slideshow_nav .prev{
+div.slideshow_nav a.prev{
     margin-left: -462px;
 }
-div.slideshow_nav .next{
+div.slideshow_nav a.next{
     margin-left: 400px;
 }
-
-div.slideshow_indicator{
-    position: absolute;
+div.shlideshow_indicator {
+    position:absolute;
     bottom: 20px;
-    left: 0;
+    left:0;
     right: 0;
     text-align: center;
 }
 
-div.slideshow_indicator a{
+div.shlideshow_indicator a{
     display: inline-block;
     color: white;
     padding: 7px;
     font-size: 24px;
 }
-div.slideshow_indicator .active{
-    color: orange;
+div.shlideshow_indicator a.active {
+    color: rgb(213, 73, 9);
 }
