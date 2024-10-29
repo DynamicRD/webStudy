@@ -1,63 +1,67 @@
 * {
-   box-sizing: border-box;
-   margin: 0px;
-   padding: 0px;  
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
 }
-
 body{
-    /*폰트사이즈,구글폰트,글자간격*/
-
+    /* 폰트사이즈, 구글폰트, 글자간격, 배경색 */
 }
-
 a{
     text-decoration: none;
     color: white;
 }
 /* 메뉴css */
-ul{
+ul {
     border: 1px dotted black;
     list-style: none;
-    background-color: blue;
+    background-color: rgb(10, 100, 152);
     width: 1200px;
     margin: 0 auto;
+
     display: flex;
     align-items: center;
 }
 
-ul>li>a{
+ul > li > a{
     display: inline-block;
     width: 100px;
     padding: 16px 16px;
+    text-align: center;
 }
-ul>li>a:hover{
+ul > li:hover > a{
     background-color: aqua;
 }
 
 .dropdown{
     position: relative;
-  
 }
 
-.dropdown-content{
+div.dropdown-content {
     display: none;
     position: absolute;
-    background-color: beige;
+    background-color: #0b87bc;
     min-width: 160px;
-    z-index:1 ;
-    box-shadow: 8px 8px 24px 0px rgba(0,0,0,0.75);
+    z-index: 1;
+    box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
 }
 
-.dropdown-content a{
-    display: none;
-    position: absolute;
-    background-color: beige;
-    min-width: 160px;
-    z-index:1 ;
+div.dropdown-content a{
+    display: block;
+    padding: 16px 16px;;
 }
-.dropdown:hover{
-    display: none;
-    position: absolute;
-    background-color: beige;
-    min-width: 160px;
-    z-index:1 ;
+
+div.dropdown-content a:hover{
+    background-color: aqua;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+/* head */
+div.head {
+    width: 1200px;
+    height: 200px;
+    margin: 0 auto;
+    background-color: blueviolet;
 }
