@@ -49,5 +49,8 @@ _testmain.go
 
 #이미지폴더
 media/
-*.png
-*.db
+ch04_media/
+ch05_media/
+ch06_media/
+studywork/p507.html
+

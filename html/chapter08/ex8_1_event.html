@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="elmid">p id="elmid"</p>
+    <p>p & no class</p>
+    <p class="elm">p class="elm 1</p>
+    <p class="elm">p class="elm 2</p>
+    <hr>
+    <script>
+        //클래스명으로
+        const elmArray = window.document.querySelectorAll(".elm");
+        elmArray.forEach((elm,index)=>document.write(`querySelectorAll: elm[${index}] = ${elm.textContent} <br>`));
+        //태그명으로 객체를 찾자
+        const pArray = window.document.querySelectorAll("p");
+        pArray.forEach((pobj,i)=>
+            document.write(`querySelectorAll: TagName = p[${i}] = ${pobj.textContent} <br>`));
+        //id명으로 객체를 찾자
+        const elmid = document.querySelector("#elmid");
+        document.write(`querySelector: id  p = ${elmid.textContent} <br>`);
+        //body 자식으로 객체를 찾자
+        const bodyChildArray = window.document.querySelectorAll("body > p");
+        bodyChildArray.forEach((bodyChild,i)=>
+            document.write(`queryAll: body child = p[${i}] = ${bodyChild.textContent} <br>`));
+        //속성으로 객체를 찾자
+        const classElmArray = window.document.querySelectorAll('p[class="elm"]');
+        classElmArray.forEach((attrObj,i)=>
+            document.write(`queryAll: [class="elm"] p[${i}] = ${attrObj.textContent} <br>`));
+        
+    
+    </script>
+
+
+</body>
+</html>
