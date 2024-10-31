@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function showDetail(){
+            document.querySelector('#desc').style.display = "block";
+            document.querySelector('#open').style.display = "none";
+        }
+        function hideDetail(){
+            document.querySelector('#desc').style.display = "none";
+            document.querySelector('#open').style.display = "block";
+        }
+    </script>
+    <style>
+        .flower{
+            width: 600px;
+            height: 400px;
+            border: 1px solid black;
+        }
+        .flower button{
+            position: absolute;
+            left: 20px;
+            top: 360px;
+            width: 150px;
+            height: 40px;
+        }
+        .detail{
+            width: 500px;
+            margin: 10px;
+        }
+        .detail button{
+            width: 150px;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="flower">
+        <button type="button" onclick="showDetail">상세 설명 보기</button>
+    </div>
+
+    <div class="detail">
+        <h3>등심붓꽃</h3>
+        <p>북아메리카 원산으로 각지에서 관상초로 흔히 심고있는 귀화식물이다. 
+            길가나 잔디밭에서 흔히 볼 수 있다. 아주 작은 씨앗을 무수히 많이
+             가지고 있는데 바람을 이용해 씨앗들을 날려보내거나, 뿌리줄기를 통해
+             동일한 개체들을 많이 만들어 냄으로써 번식한다.
+        </p>
+        <button type="button" onclick="hideDetail">상세 설명 닫기</button>
+    </div>
+
+</body>
+</html>
